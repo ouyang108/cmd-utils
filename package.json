@@ -4,14 +4,16 @@
   "description": "",
   "type": "module",
   "bin": {
-    "cmd-utils": "dist/index.cjs"
+    "cmd-utils": "./dist/index.cjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts,.js",
     "lint:fix": "eslint . --ext .ts,.js --fix",
     "build": "tsdown",
-    "dev": "tsdown --watch"
+    "watch:build": "tsdown --watch",
+    "watch:yalc": "nodemon --exec yalc publish --push -e ts,js,json",
+    "dev": "concurrently \"pnpm run watch:build\" \"pnpm run watch:yalc\""
   },
   "keywords": [],
   "author": "",
@@ -21,6 +23,7 @@
     "@types/node": "^25.0.3",
     "@typescript-eslint/eslint-plugin": "^8.50.0",
     "@typescript-eslint/parser": "^8.50.0",
+    "concurrently": "^9.2.1",
     "eslint": "^9.39.2",
     "tsdown": "^0.18.1",
     "typescript": "^5.9.3"

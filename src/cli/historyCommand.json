@@ -1,5 +1,5 @@
 {
-  "pi": "pnpm install or pnpm i",
-  "pa": "pnpm add or pnpm add <package>",
+  "pi": "pnpm install",
+  "pa": "pnpm add",
   "pb": "pnpm build"
 }
