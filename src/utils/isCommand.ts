@@ -19,7 +19,6 @@ async function isCommandExists(command: string) {
     // macOS/Linux 系统使用 command -v
     cmd = `command -v ${command}`;
   }
-  console.log("22222");
   try {
     // 执行校验命令
     await execAsync(cmd);
