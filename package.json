@@ -1,10 +1,10 @@
 {
   "name": "@ou/cmd-utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "一个轻量级的命令别名管理脚手架工具",
   "type": "module",
   "bin": {
-    "cmd-utils": "./dist/index.cjs"
+    "ocu": "./dist/index.cjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

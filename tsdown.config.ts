@@ -60,7 +60,7 @@ export default defineConfig({
 
         if (existsSync(srcCliDir)) {
           copyRecursive(srcCliDir, destCliDir);
-          console.log(`Copied ${srcCliDir} to ${destCliDir}`);
+          // console.log(`Copied ${srcCliDir} to ${destCliDir}`);
         }
       },
     },
