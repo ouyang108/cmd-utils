@@ -66,8 +66,11 @@ ocu ls
 ```
 === 可用命令别名列表 ===
 [1] pi     -> pnpm install
-[2] pa     -> pnpm add
+[2] pa     -> pnpm add 
 [3] pb     -> pnpm build
+[4] nst    -> npm config set registry https://registry.npmmirror.com
+[5] ns     -> npm config set registry https://registry.npmjs.org
+[6] ncr    -> npm config get registry
 =========================
 ```
 
@@ -94,8 +97,11 @@ ocu set pb pnpm build
 ```
 📋 当前JSON文件中的内容：
 [1] pi     -> pnpm install
-[2] pa     -> pnpm add
+[2] pa     -> pnpm add 
 [3] pb     -> pnpm build
+[4] nst    -> npm config set registry https://registry.npmmirror.com
+[5] ns     -> npm config set registry https://registry.npmjs.org
+[6] ncr    -> npm config get registry
 
 ? 请选择操作：
 ❯ 修改已有命令

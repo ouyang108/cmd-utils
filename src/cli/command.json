@@ -1,5 +1,8 @@
 {
   "pi": "pnpm install",
   "pa": "pnpm add ",
-  "pb": "pnpm build"
+  "pb": "pnpm build",
+  "nst": "npm config set registry https://registry.npmmirror.com",
+  "ns": "npm config set registry https://registry.npmjs.org",
+  "ncr": "npm config get registry"
 }
