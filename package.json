@@ -1,7 +1,7 @@
 {
   "name": "@ou/cmd-utils",
   "version": "1.0.0",
-  "description": "一个轻量级的命令别名管理脚手架工具",
+  "description": "一个轻量级的命令别名管理脚手架工具，让你能够快速设置和执行自定义命令",
   "type": "module",
   "bin": {
     "ocu": "./dist/index.cjs"
@@ -15,10 +15,40 @@
     "watch:yalc": "nodemon --exec yalc publish --push -e ts,js,json",
     "dev": "concurrently \"pnpm run watch:build\" \"pnpm run watch:yalc\""
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "command-alias",
+    "cmd-utils",
+    "脚手架",
+    "命令管理"
+  ],
+  "author": {
+    "name": "ouyang108",
+    "url": "https://github.com/ouyang108"
+  },
   "license": "ISC",
   "packageManager": "pnpm@10.22.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ouyang108/cmd-utils"
+  },
+  "homepage": "https://github.com/ouyang108/cmd-utils#readme",
+  "bugs": {
+    "url": "https://github.com/ouyang108/cmd-utils/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=7.0.0"
+  },
+  "files": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.1.0",
+    "cac": "^6.7.14",
+    "chalk": "^5.6.2"
+  },
   "devDependencies": {
     "@types/node": "^25.0.3",
     "@typescript-eslint/eslint-plugin": "^8.50.0",
@@ -27,10 +57,5 @@
     "eslint": "^9.39.2",
     "tsdown": "^0.18.1",
     "typescript": "^5.9.3"
-  },
-  "dependencies": {
-    "@inquirer/prompts": "^8.1.0",
-    "cac": "^6.7.14",
-    "chalk": "^5.6.2"
   }
 }
