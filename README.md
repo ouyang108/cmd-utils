@@ -14,7 +14,7 @@
 ## 安装
 
 ```bash
-npm install @ou/cmd-utils -g
+npm install @ouyangtianfeng/cmd-utils -g
 ```
 
 ## 快速开始
