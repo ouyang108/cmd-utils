@@ -1,4 +1,4 @@
-# @ou/cmd-utils
+# @ouyangtianfeng/cmd-utils
 
 一个轻量级的命令别名管理脚手架工具，让你能够快速设置和执行自定义命令。
 
